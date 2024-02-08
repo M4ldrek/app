@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.background {
+  background: url("../images/Waves2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.background-reverse {
+  background: url("../images/Waves1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.tech1-angle-position {
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 20%);
+}
+
+.tech2-angle-position {
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -10%);
+}
+
+.tech-circle-photo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rotate-animation {
+  animation: rotation 50s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
