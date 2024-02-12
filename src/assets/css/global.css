@@ -5,7 +5,7 @@
   scrollbar-width: none;
   font-family: "Hanken Grotesk", sans-serif;
   font-optical-sizing: auto;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-style: normal;
 }
 
@@ -34,13 +34,11 @@
 .tech1-angle-position {
   bottom: 50%;
   right: 50%;
-  transform: translate(50%, 20%);
 }
 
 .tech2-angle-position {
   top: 50%;
   left: 50%;
-  transform: translate(-30%, -10%);
 }
 
 .tech-circle-photo {
@@ -49,8 +47,49 @@
   transform: translate(-50%, -50%);
 }
 
+.arrow-down-position {
+  width: 80px;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-card {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  border-radius: 50px;
+}
+
+.card-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 800px;
+}
+
+.slideUpDown-animation {
+  animation: slideUpDown 2s infinite linear;
+}
+
 .rotate-animation {
   animation: rotation 50s infinite linear;
+}
+
+.fadeIn-animation {
+  animation: 3s fadeIn;
+}
+
+@keyframes slideUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes rotation {
@@ -59,5 +98,15 @@
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
