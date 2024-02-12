@@ -68,6 +68,16 @@
   max-height: 800px;
 }
 
+.quote-phrase {
+  bottom: 300px;
+  left: 0;
+}
+
+.quote-line {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .slideUpDown-animation {
   animation: slideUpDown 2s infinite linear;
 }

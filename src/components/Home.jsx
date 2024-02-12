@@ -31,8 +31,8 @@ export default function Home({ ref }) {
             </div>
             <div className="h-100 d-flex justify-content-center align-items-center flex-column">
               <div>
-                <h1 style={{ fontSize: "70px" }}>
-                  CIAO! MI CHIAMO <br />
+                <h1 style={{ fontSize: "80px" }}>
+                  MI CHIAMO <br />
                   CAMILLO PISANU
                 </h1>
                 <h4>SONO UNO SVILUPPATORE WEB</h4>
