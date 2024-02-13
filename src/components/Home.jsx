@@ -4,20 +4,19 @@ import TechAngle1 from "../assets/images/TechAngle1.png";
 import TechAngle2 from "../assets/images/TechAngle2.png";
 import TechCircle from "../assets/images/Circle.png";
 import ProfilePic from "../assets/images/ProfilePic.png";
-import Waves1 from "../assets/images/Waves2.png";
 import ArrowDown from "../assets/images/ArrowDown.png";
 
 export default function Home({ ref }) {
   console.log(ref);
   return (
-    <div>
-      <div>
+    <div className="background-waves2">
+      {/* <div>
         <img
           src={Waves1}
           alt=""
           className="position-absolute fadeIn-animation w-100"
         />
-      </div>
+      </div> */}
 
       <div className="app-container d-flex align-items-center justify-content-center">
         <div className="row w-75 h-75 d-flex align-items-center justify-content-center">

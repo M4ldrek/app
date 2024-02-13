@@ -18,17 +18,18 @@
   height: 100vh;
 }
 
-.background {
-  background: url("../images/Waves2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
-.background-reverse {
-  background: url("../images/Waves1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.background-waves {
+  background-image: url("../images/Waves1.png");
   background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-waves2 {
+  background-image: url("../images/Waves2.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .tech1-angle-position {
@@ -68,14 +69,33 @@
   max-height: 800px;
 }
 
-.quote-phrase {
-  bottom: 300px;
-  left: 0;
-}
-
 .quote-line {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+form > .input-style {
+  border: 1px solid white;
+  line-height: 35px;
+  border-radius: 10px;
+  color: black;
+  padding-left: 10px;
+}
+
+form > .input-style:focus-visible {
+  border-color: red;
+}
+
+form > button {
+  height: 30px;
+  background-color: blue;
+  border: 0;
+  border-radius: 10px;
+}
+
+.wave1 {
+  bottom: 0;
+  left: 0;
 }
 
 .slideUpDown-animation {
